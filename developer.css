@@ -1,0 +1,780 @@
+
+.developer-theme {
+    background: #0a0a0a;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND */
+
+.developer-theme::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at top left,
+            #2563eb22,
+            transparent 25%),
+
+        radial-gradient(circle at bottom right,
+            #e5091422,
+            transparent 25%);
+
+    z-index: -1;
+}
+
+/* MAIN */
+
+.developer-theme .resume-page {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px 40px 100px;
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.developer-theme .navbar {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.developer-theme .navbar h2 {
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: white;
+}
+
+.developer-theme .navbar a {
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #1a1a1a;
+
+    padding: 12px 20px;
+
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.developer-theme .navbar a:hover {
+
+    background: #2563eb;
+}
+
+/* ========================= */
+/* HERO CARD */
+/* ========================= */
+
+.developer-theme .resume-card {
+
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 60px;
+
+    background: #141414cc;
+
+    border: 1px solid #222;
+
+    border-radius: 35px;
+
+    padding: 50px;
+
+    backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 0 40px #00000088;
+
+    align-items: center;
+}
+
+/* IMAGE */
+
+.developer-theme .left {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.developer-theme .profile {
+
+    width: 100%;
+
+    max-width: 280px;
+
+    aspect-ratio: 3/4;
+
+    object-fit: cover;
+
+    border-radius: 28px;
+
+    border: 4px solid #3b82f6;
+
+    box-shadow:
+        0 0 30px #3b82f655;
+}
+
+/* RIGHT */
+
+.developer-theme .right {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.developer-theme .tag {
+
+    display: inline-flex;
+
+    width: fit-content;
+
+    padding: 10px 20px;
+
+    background: #2563eb;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 25px;
+}
+
+.developer-theme .right h1 {
+
+    font-size: 5rem;
+
+    line-height: 0.95;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.developer-theme .right h2 {
+
+    font-size: 2rem;
+
+    color: #d1d5db;
+
+    margin-bottom: 25px;
+}
+
+.developer-theme .desc {
+
+    max-width: 700px;
+
+    color: #9ca3af;
+
+    line-height: 1.9;
+
+    font-size: 1.05rem;
+}
+
+/* ========================= */
+/* INFO */
+/* ========================= */
+
+.developer-theme .info {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.developer-theme .info-box {
+
+    background: #171717;
+
+    border: 1px solid #222;
+
+    padding: 16px 22px;
+
+    border-radius: 18px;
+}
+
+.developer-theme .info-box span {
+
+    font-size: 0.8rem;
+
+    color: #9ca3af;
+}
+
+.developer-theme .info-box p {
+
+    margin-top: 6px;
+
+    font-weight: 600;
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.developer-theme .buttons {
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 35px;
+
+    flex-wrap: wrap;
+}
+
+.developer-theme .buttons button,
+.developer-theme .buttons a {
+
+    padding: 16px 30px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.developer-theme .buttons a {
+
+    background: #1f1f1f;
+}
+
+.developer-theme .buttons button:hover,
+.developer-theme .buttons a:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px #2563eb55;
+}
+
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.developer-theme .section {
+
+    margin-top: 70px;
+}
+
+.developer-theme .section h2 {
+
+    font-size: 2.2rem;
+
+    margin-bottom: 30px;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.developer-theme .cards {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.developer-theme .project-card {
+
+    background: #171717;
+
+    border: 1px solid #222;
+
+    border-radius: 28px;
+
+    padding: 30px;
+
+    min-height: 220px;
+
+    transition: 0.35s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.developer-theme .project-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 30px #2563eb33;
+}
+
+.developer-theme .project-card h3 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+}
+
+.developer-theme .project-card p {
+
+    color: #9ca3af;
+
+    line-height: 1.8;
+}
+
+/* ========================= */
+/* EXPERIENCE */
+/* ========================= */
+
+.developer-theme .experience-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+}
+
+.developer-theme .experience-card {
+
+    display: flex;
+
+    background: #171717;
+
+    border: 1px solid #222;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    transition: 0.35s;
+
+    min-height: 240px;
+}
+
+.developer-theme .experience-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 30px #2563eb33;
+}
+
+.developer-theme .experience-card img {
+
+    width: 320px;
+
+    object-fit: cover;
+}
+
+.developer-theme .experience-content {
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.developer-theme .exp-year {
+
+    color: #3b82f6;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 12px;
+
+    font-weight: 600;
+}
+
+.developer-theme .experience-content h3 {
+
+    font-size: 2rem;
+
+    margin-bottom: 18px;
+}
+
+.developer-theme .experience-content p {
+
+    color: #9ca3af;
+
+    line-height: 1.9;
+}
+
+/* ========================= */
+/* POSTER */
+/* ========================= */
+
+.developer-theme .project-poster {
+
+    padding: 0;
+
+    height: 420px;
+}
+
+.developer-theme .project-poster img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.developer-theme .project-poster:hover img {
+
+    transform: scale(1.08);
+}
+
+.developer-theme .overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.1));
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding: 30px;
+
+    opacity: 0;
+
+    transition: 0.35s;
+}
+
+.developer-theme .project-poster:hover .overlay {
+
+    opacity: 1;
+}
+
+/* ========================= */
+/* PROJECT BUTTONS */
+/* ========================= */
+
+.developer-theme .project-buttons {
+
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+}
+
+.developer-theme .project-buttons a,
+.developer-theme .project-buttons button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    font-weight: 500;
+}
+
+.developer-theme .project-buttons a:hover,
+.developer-theme .project-buttons button:hover {
+
+    transform: translateY(-3px);
+
+    background: #3b82f6;
+}
+
+/* ========================= */
+/* POPUP */
+/* ========================= */
+
+.developer-theme .cert-popup {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+.developer-theme .cert-popup.show {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.developer-theme .cert-image {
+
+    width: 70%;
+
+    max-width: 700px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 40px #000;
+}
+
+.developer-theme .close {
+
+    position: absolute;
+
+    top: 30px;
+
+    right: 40px;
+
+    font-size: 2rem;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:1000px) {
+
+    .developer-theme .resume-card {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .developer-theme .left {
+
+        justify-content: center;
+    }
+
+    .developer-theme .right {
+
+        align-items: center;
+    }
+
+    .developer-theme .tag {
+
+        margin-inline: auto;
+    }
+
+    .developer-theme .right h1 {
+
+        font-size: 3.5rem;
+    }
+
+    .developer-theme .right h2 {
+
+        font-size: 1.5rem;
+    }
+
+    .developer-theme .buttons,
+    .developer-theme .info {
+
+        justify-content: center;
+    }
+
+    .developer-theme .experience-card {
+
+        flex-direction: column;
+    }
+
+    .developer-theme .experience-card img {
+
+        width: 100%;
+
+        height: 240px;
+    }
+}
+
+@media(max-width:600px) {
+
+    .developer-theme .resume-page {
+
+        padding: 30px 20px 80px;
+    }
+
+    .developer-theme .resume-card {
+
+        padding: 30px;
+    }
+
+    .developer-theme .profile {
+
+        max-width: 220px;
+    }
+
+    .developer-theme .right h1 {
+
+        font-size: 2.5rem;
+    }
+
+    .developer-theme .right h2 {
+
+        font-size: 1.2rem;
+    }
+
+    .developer-theme .project-poster {
+
+        height: 320px;
+    }
+
+    .developer-theme .cert-image {
+
+        width: 95%;
+    }
+}
+
+/* ========================= */
+/* EDUCATION + CERTIFICATE LOGO FIX */
+/* ========================= */
+
+.edu-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.edu-logo {
+    width: 58px !important;
+    height: 58px !important;
+
+    min-width: 58px;
+    max-width: 58px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 6px;
+
+    flex-shrink: 0;
+}
+
+.cert-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cert-logo {
+    width: 58px !important;
+    height: 58px !important;
+
+    min-width: 58px;
+    max-width: 58px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 6px;
+
+    flex-shrink: 0;
+}
+
+/* กัน h3 ดัน layout */
+.edu-top h3,
+.cert-top h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+
+    .edu-logo,
+    .cert-logo{
+
+        width: 48px !important;
+        height: 48px !important;
+
+        min-width: 48px;
+        max-width: 48px;
+    }
+
+}
